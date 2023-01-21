@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Interactive rating component</title>
+
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./reset.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <main>
+      <!-- Rating state start -->
+
+      <div class="box active" data-input>
+        <div class="rating--section grid__section">
+          <div class="icon">
+            <img src="./images/icon-star.svg" alt="star logo image" />
+          </div>
+          <h1>How did we do?</h1>
+          <p>
+            Please let us know how we did with your request. All feedback is
+            appreciated to help us improve our offering!
+          </p>
+          <div class="input-group">
+            <div class="inner-block">
+              <input
+                id="pickup-1"
+                class="radio-custom input-group-field"
+                name="radio-group"
+                type="radio"
+                value="1"
+                data-rating
+              />
+              <label for="pickup-1" class="radio-custom-label">1</label>
+            </div>
+
+            <div class="inner-block">
+              <input
+                id="pickup-2"
+                class="radio-custom input-group-field"
+                name="radio-group"
+                type="radio"
+                value="2"
+                data-rating
+              />
+              <label for="pickup-2" class="radio-custom-label">2</label>
+            </div>
+
+            <div class="inner-block">
+              <input
+                id="pickup-3"
+                class="radio-custom input-group-field"
+                name="radio-group"
+                type="radio"
+                value="3"
+                data-rating
+              />
+              <label for="pickup-3" class="radio-custom-label">3</label>
+            </div>
+            <div class="inner-block">
+              <input
+                id="pickup-4"
+                class="radio-custom input-group-field"
+                name="radio-group"
+                type="radio"
+                value="4"
+                data-rating
+              />
+              <label for="pickup-4" class="radio-custom-label">4</label>
+            </div>
+            <div class="inner-block">
+              <input
+                id="pickup-5"
+                class="radio-custom input-group-field"
+                name="radio-group"
+                type="radio"
+                value="5"
+                data-rating
+              />
+              <label for="pickup-5" class="radio-custom-label">5</label>
+            </div>
+          </div>
+
+          <button id="submit">Submit</button>
+        </div>
+      </div>
+
+      <!-- Rating state end -->
+
+      <!-- Thank you state start -->
+      <div class="box" data-feedback>
+        <div class="feedback">
+          <img src="./images/illustration-thank-you.svg" alt="" />
+          <p class="ratings__selected">
+            You have selected <span data-rating-output>output</span> out of 5
+          </p>
+          <h1>Thank you!</h1>
+          <p>
+            We appreciate you taking the time to give a rating. If you ever need
+            more support, don’t hesitate to get in touch!
+          </p>
+        </div>
+      </div>
+
+      <!-- Thank you state end -->
+    </main>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
